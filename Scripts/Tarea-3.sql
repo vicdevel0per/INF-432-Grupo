@@ -4,6 +4,7 @@
 IF EXISTS(SELECT name FROM master.sys.databases WHERE name=N'SoporteBD')
 BEGIN
 	PRINT 'La base de datos ya existe';
+	USE master;
 	DROP DATABASE SoporteBD;
 END
 GO
@@ -12,7 +13,7 @@ CREATE DATABASE SoporteBD;
 GO
 USE SoporteBD;
 GO
-
+--customer 
 IF OBJECT_ID('customer','U') IS NOT NULL
 DROP TABLE customer;
 GO
@@ -25,6 +26,10 @@ CREATE TABLE customer(
 );
 GO
 CREATE INDEX IDX_customer_name ON customer("name");
+GO
+-- customer_category
+IF OBJECT_ID('customer_category','U') IS NOT NULL
+DROP TABLE customer;
 GO
 CREATE TABLE customer_category(
 	id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
@@ -332,5 +337,3 @@ INSERT INTO airplane (registration_number, begin_of_operation, "status", id_plan
 ('C67890', '2015-05-15', 'Active', 2),
 ('G54321', '2020-10-10', 'Maintenance', 3),
 ('B09876', '2018-03-25', 'Retired', 4);
-
---select * from airplane;
