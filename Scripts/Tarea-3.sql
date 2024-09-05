@@ -1,5 +1,6 @@
 /*
 hola mundoooooo
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 */
 IF EXISTS(SELECT name FROM master.sys.databases WHERE name=N'SoporteBD')
 BEGIN
