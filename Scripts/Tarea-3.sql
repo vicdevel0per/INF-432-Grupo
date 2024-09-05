@@ -1,5 +1,4 @@
-/*Nombre: Jose Carlos Giron Solano
-  Registro: 216161924
+/*
 */
 IF EXISTS(SELECT name FROM master.sys.databases WHERE name=N'SoporteBD')
 BEGIN
