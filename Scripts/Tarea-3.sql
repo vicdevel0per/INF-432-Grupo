@@ -1,4 +1,5 @@
 /*
+hola mundoooooo
 */
 IF EXISTS(SELECT name FROM master.sys.databases WHERE name=N'SoporteBD')
 BEGIN
@@ -290,7 +291,7 @@ INSERT INTO plane_model (description, graphic) VALUES
 INSERT INTO flight_number (departure_time, "description", "type", airline, id_airport_start, id_airport_goal, id_plane_model) VALUES
 ('10:00:00', 'Morning Flight to London', 'International', 'British Airways', 1, 4, 4),
 ('12:30:00', 'Afternoon Flight to Toronto', 'International', 'Air Canada', 1, 2, 2),
-('15:45:00', 'Evening Flight to Mexico City', 'International', 'Aeroméxico', 1, 3, 1),
+('15:45:00', 'Evening Flight to Mexico City', 'International', 'Aeromï¿½xico', 1, 3, 1),
 ('08:00:00', 'Early Flight to New York', 'Domestic', 'American Airlines', 4, 1, 1);
 
 INSERT INTO flight (boarding_time, flight_date, gate, check_in_counter, id_flight_number) VALUES
